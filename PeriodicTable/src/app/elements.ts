@@ -1,4 +1,4 @@
-export class Elements {´
+export class Elements {
 
     name: string;
     phase:string;
