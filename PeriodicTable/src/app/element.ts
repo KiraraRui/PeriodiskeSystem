@@ -1,4 +1,4 @@
-export class Elements {
+export class Element {
 
     name: string;
     phase:string;
@@ -14,7 +14,8 @@ export class Elements {
     melt: number;
     boil: number;
 
-    constructor(name: string, phase:string, color:string, symbol:string, summary:string, category:string, apperarance:string, atomicMass:number, density:number, period:number, number:number, melt:number, boil:number){
+    constructor(name: string, phase: string, color: string, symbol: string, summary: string, category: string, 
+    apperarance: string, atomicMass: number, density: number, period: number, number: number, melt: number, boil: number){
     
     this.name = name;
     this.phase = phase;
@@ -23,7 +24,8 @@ export class Elements {
     this.summary = summary;
     this.category = category;
     this.appearance = apperarance;
-    this.atomicMass = density;
+    this.atomicMass = atomicMass;
+    this.density = density;
     this.period = period;
     this.number = number;
     this.melt = melt;
