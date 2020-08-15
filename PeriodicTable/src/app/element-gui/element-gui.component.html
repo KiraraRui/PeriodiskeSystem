@@ -1,1 +1,74 @@
 <p>element-gui works!</p>
+
+
+
+<div class="wrapper">
+    <input class="category-toggle" type="radio" id="alkali-metals" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="alkaline-earth-metals" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="lanthanoids" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="actinoids" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="transition-metals" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="post-transition-metals" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="metalloids" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="other-nonmetals" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="noble-gasses" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+    <input class="category-toggle" type="radio" id="unknown" name="categories"/>
+    <input class="category-cancel" type="radio" id="cancel" name="categories"/>
+
+
+    <div class="periodic-table">
+      <div class="element other-nonmetal c1 r1">
+        <input class="activate" type="radio" name="elements"/>
+        <input class="deactivate" type="radio" name="elements"/>
+        <div class="overlay"></div>
+        <div class="square">
+          <div class="model">
+            <div class="orbital">
+              <div class="electron"></div>
+            </div>
+          </div>
+          <div class="atomic-number">1</div>
+          <div class="label">
+            <div class="symbol">{{elementInput.symbol}}</div>
+            <div class="name">{{elementInput.name}}</div>
+          </div>
+          <div class="atomic-mass">{{elementInput.atomicMass}}</div>
+          <ul class="atomic-weight">
+            <li>{{elementInput.number}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="placeholder lanthanoid c3 r6">
+        <div class="square">57-71</div>
+      </div>
+      <div class="placeholder actinoid c3 r7">
+        <div class="square">89-103</div>
+      </div>
+
+
+      <div class="gap c3 r8"></div>
+      <div class="key">
+        <div class="row">
+          <label class="alkali-metal" for="alkali-metals">Alkali Metals</label>
+          <label class="alkaline-earth-metal" for="alkaline-earth-metals">Alkaline Earth Metals</label>
+          <label class="lanthanoid" for="lanthanoids">Lanthanoids</label>
+          <label class="actinoid" for="actinoids">Aktinoids</label>
+          <label class="transition-metal" for="transition-metals">Transition Metals</label>
+          <label class="post-transition-metal" for="post-transition-metals">Post-Transition Metals</label>
+          <label class="metalloid" for="metalloids">Metalloids</label>
+          <label class="other-nonmetal" for="other-nonmetals">Other Nonmetals</label>
+          <label class="noble-gas" for="noble-gasses">Noble Gasses</label>
+          <label class="unknown" for="unknown">Unknown</label>
+        </div>
+      </div>
+    </div>
+  </div>

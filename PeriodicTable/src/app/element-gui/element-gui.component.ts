@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Element } from '../element';
 
 @Component({
   selector: 'app-element-gui',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./element-gui.component.css']
 })
 export class ElementGuiComponent implements OnInit {
+  @Input('element') elementInput: Element;
 
   constructor() { }
 
