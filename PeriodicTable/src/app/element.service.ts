@@ -8,7 +8,7 @@ import { HttpClient} from '@angular/common/http';
 })
 
 export class ElementService {
-constructor(private httpClient: HttpClient) { 
+constructor(private httpClient: HttpClient) {
     console.log('elementService');
     this.MapData();
   }
@@ -39,7 +39,6 @@ constructor(private httpClient: HttpClient) {
         this.elements.push(tempElement);
         }  
       })
-      console.log(this.elements);
     }
   }
 

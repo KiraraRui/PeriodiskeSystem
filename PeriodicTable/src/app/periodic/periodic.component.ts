@@ -1,5 +1,6 @@
-import { ElementService } from './../element.service';
 import { Component, OnInit } from '@angular/core';
+import { ElementService } from '../element.service';
+import { Element } from '../element';
 
 @Component({
   selector: 'app-periodic',
@@ -8,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeriodicComponent implements OnInit {
 
-  constructor() { }
+  elements : Element[];
+  constructor(private elementService: ElementService) { 
+  this.elements = elementService.elements;
+  console.log(this.elements);
+   }
 
   ngOnInit(): void {}
 
