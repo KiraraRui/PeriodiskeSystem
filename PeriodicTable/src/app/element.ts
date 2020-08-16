@@ -13,9 +13,10 @@ export class Element {
     number: number;
     melt: number;
     boil: number;
+    group: number;
 
     constructor(name: string, phase: string, color: string, symbol: string, summary: string, category: string, 
-    apperarance: string, atomicMass: number, density: number, period: number, number: number, melt: number, boil: number){
+    apperarance: string, atomicMass: number, density: number, period: number, number: number, melt: number, boil: number, group:number){
     
     this.name = name;
     this.phase = phase;
@@ -30,6 +31,7 @@ export class Element {
     this.number = number;
     this.melt = melt;
     this.boil = boil;
+    this.group = group;
 
     }
 }
